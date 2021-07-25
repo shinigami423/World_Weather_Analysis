@@ -1,10 +1,11 @@
 # World_Weather_Analysis
-
-Analysis, visualization, and statistical analysis by retrieving and analyzing weather data for a hypothetical travel company, PlanMyTrip.
-
-
+## Purpose
+Adding weather description to the weather data retrieved in the module. Then beta test with input statements to filter locations for weather preference. Finally, identify and plot travel routes using nearby hotels to create a travel itinerary using Google Maps Directions API.
 
 
+## Programs
+**Weather Database** is used to select 2000 ranomdized latitude and longitude and perform a API request for cities closest to the genergated locations. Then use JSON to retrieve data including latitude, longitude, maximum temperature, % humidity, % cloudiness, wind speed, country, and weather description and store it in a DataFrame. Lastly, store it in a csv file.
 
+**Vacation Search** is used to create a customer's travel destinations map using the weather database generated. The program asks the user to input a minimum and maximum preferred temperature and filters the database, creating a filtered DataFrame. Lastly, it plots the location and mark the closest hotels on the Google Map.
 
-###At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to hotels that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the client.
+**Vacation Itinerarary** is used to create an itinerary using the filtered DataFrame and plots a travel route for the selected four cities. 
